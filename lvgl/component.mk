@@ -28,7 +28,7 @@ COMPONENT_SRCDIRS := . \
                   src/extra/widgets/spinner \
                   src/extra/widgets/tabview \
                   src/extra/widgets/tileview \
-                  src/extra/widgets/win
+                  src/extra/widgets/win \
 
 
 COMPONENT_ADD_INCLUDEDIRS := $(COMPONENT_SRCDIRS) .

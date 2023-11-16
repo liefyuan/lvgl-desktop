@@ -2,6 +2,7 @@
 #include "lvgl/demos/lv_demos.h"
 #include "lv_drivers/display/fbdev.h"
 #include "lv_drivers/indev/evdev.h"
+#include "my_app/lv_100ask.h"
 #include <unistd.h>
 #include <pthread.h>
 #include <time.h>
@@ -51,7 +52,8 @@ int main(void)
 
 
     /*Create a Demo*/
-    lv_demo_widgets();
+    //lv_demo_widgets();
+	lv_start_demo(0);
 
     /*Handle LitlevGL tasks (tickless mode)*/
     while(1) {

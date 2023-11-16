@@ -1,7 +1,7 @@
 #
 # Makefile
 #
-cc 				?= arm-rockchip830-linux-uclibcgnueabihf-gcc#arm-linux-gnueabihf-gcc
+cc 				?= arm-linux-gnueabihf-gcc
 LVGL_DIR_NAME 	?= lvgl
 LVGL_DIR 		?= .
 
@@ -27,6 +27,7 @@ MAINSRC = 		./main.c
 
 include $(LVGL_DIR)/lvgl/lvgl.mk
 include $(LVGL_DIR)/lv_drivers/lv_drivers.mk
+include $(LVGL_DIR)/my_app/my_app.mk
 
 #CSRCS 			+=$(LVGL_DIR)/mouse_cursor_icon.c 
 
